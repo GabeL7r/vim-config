@@ -1,0 +1,17 @@
+source ~/.vim/vimrc/plugins
+
+source ~/.vim/vimrc/ctrlp
+source ~/.vim/vimrc/dbext
+source ~/.vim/vimrc/deoplete
+source ~/.vim/vimrc/easymotion
+source ~/.vim/vimrc/javascript
+source ~/.vim/vimrc/keymaps
+source ~/.vim/vimrc/nerdtree
+source ~/.vim/vimrc/supertab
+source ~/.vim/vimrc/style
+source ~/.vim/vimrc/syntastic
+source ~/.vim/vimrc/system
+source ~/.vim/vimrc/tf
+source ~/.vim/vimrc/ultisnips
+
+

@@ -1,0 +1,59 @@
+" Minimal Configuration
+set nocompatible
+syntax on
+filetype plugin indent on
+
+call plug#begin('~/.vim/plugged')
+" store vim sessions
+"Plug 'tpope/vim-obsession'
+
+" GIT FUNCTIONALITY
+Plug 'tpope/vim-fugitive'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
+
+
+Plug 'pangloss/vim-javascript'
+
+" MYSQL DATABASE PLUGIN
+Plug 'vim-scripts/dbext.vim'
+Plug 'nagatopain/autosqluppercase.vim'
+Plug 'vim-scripts/SQLUtilities'
+
+Plug 'vim-scripts/Align'
+Plug 'shmup/vim-sql-syntax'
+
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Vim navigation for tmux
+"Plug 'christoomey/vim-tmux-navigator'
+
+"Plug 'editorconfig/editorconfig-vim'
+
+"Plug 'Townk/vim-autoclose'
+"Plug 'Yggdroot/indentLine'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'kien/ctrlp.vim'
+Plug 'morhetz/gruvbox'
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'cwood/ultisnips-terraform-snippets'
+Plug 'SirVer/ultisnips'
+
+Plug 'ervandew/supertab'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'hashivim/vim-terraform'
+Plug 'vim-syntastic/syntastic'
+Plug 'juliosueiras/vim-terraform-completion'
+call plug#end()
+
+

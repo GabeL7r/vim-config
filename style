@@ -1,0 +1,14 @@
+" display settings
+set background=dark
+" important to set to 256 color before colorscheme
+set term=screen-256color
+" enable syntax highlights
+syntax enable
+colorscheme  gruvbox
+
+" show line numbers and keep cursor centered in file
+set number
+set relativenumber
+set scrolloff=999
+
+

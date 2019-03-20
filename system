@@ -1,0 +1,51 @@
+" enable vim to detect filetypes and load plugins and indent based on type
+filetype plugin indent on
+
+" set vim to use zsh shell
+set shell=/usr/bin/zsh
+
+" disable swap files
+set noswapfile
+
+" search settings
+set incsearch
+
+" indentation settings
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set smartindent
+set expandtab
+set smarttab
+
+" autosave after buffer switch
+set autowrite
+" autoread file if it's updated elsewhere
+set autoread
+" fold files based on syntax
+set foldmethod=syntax
+" max nesting folding level is 10
+set foldnestmax=10
+" enable folding
+set foldenable
+" show whitespace characters
+set list
+" set tab and eol characters
+set listchars=tab:▸\ ,eol:¬
+
+" set window splits to below and to the right by default
+set splitbelow
+set splitright
+
+
+set hlsearch
+" only enable mouse for one mode
+set mouse=r
+
+" use system clipboard when copying from vim
+" for example "*yy will copy current line to system clipboard
+set clipboard=unnamedplus
+vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+
+
+

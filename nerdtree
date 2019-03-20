@@ -1,0 +1,12 @@
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+silent! nmap <F2> :NERDTreeToggle<CR>
+silent! nmap <F3> :NERDTreeFind<CR>
+let NERDTreeIgnore = ['\.pyc$', 'node_modules']
+let NERDTreeShowHidden=1
+let g:NERDTreeMapActivateNode="<F3>"
+let g:NERDTreeMapPreview="<F4>"
+let NERDTreeShowHidden=1
+
+

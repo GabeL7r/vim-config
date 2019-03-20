@@ -1,0 +1,13 @@
+let g:ftplugin_sql_statements = 'create,alter,select,insert'
+let g:sql_type_default = 'mysql'
+let g:ftplugin_sql_omni_key_right = '<Right>'
+let g:ftplugin_sql_omni_key_left = '<Left>'
+lef g:ftplugin_omni_sql_use_tbl_alias = d
+lef g:ftplugin_omni_sql_include_owner = 0
+
+"let g:dbext_default_profile_local="type=MYSQL:extra=--defaults-file=/home/gabe/.my.cnf"
+"let g:dbext_default_profile_test="type=MYSQL:host=50.116.20.188"
+"let g:dbext_default_profile_prod="type=MYSQL:host=50.116.31.236"
+"let g:dbext_default_profile_test_external_info_sources="type=MYSQL:host=50.116.20.188:dbname=external_info_sources"
+
+
