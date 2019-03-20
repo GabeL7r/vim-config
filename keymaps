@@ -10,6 +10,8 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap j gj
 nnoremap k gk
 
+noremap <tab> <C-x><C-o>
+
 " change escape key to normal mode
 :imap uu <Esc>
 noremap <Leader>q :q<CR>
