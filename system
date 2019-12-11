@@ -44,8 +44,12 @@ set mouse=r
 
 " use system clipboard when copying from vim
 " for example "*yy will copy current line to system clipboard
-set clipboard=unnamedplus
-vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+  vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+endif
 
 
 " match longest entry
