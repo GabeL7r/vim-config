@@ -2,7 +2,7 @@
 filetype plugin indent on
 
 " set vim to use zsh shell
-set shell=/usr/bin/zsh
+set shell=/usr/local/bin/zsh
 
 " disable swap files
 set noswapfile
